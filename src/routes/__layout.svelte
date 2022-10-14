@@ -4,6 +4,7 @@
 	import { slide } from 'svelte/transition';
 	//import { page } from '$app/stores';
 	let open = false; //mobile sidebar
+	import { base } from '$app/paths';
 </script>
 
 <main class="container">
@@ -12,7 +13,7 @@
 		<div class="sidebar" transition:slide>
 			<div class="sidebar-items">
 				<a
-					href="/about"
+					href="{base}/about"
 					class="item"
 					on:click={() =>
 						setTimeout(() => {
