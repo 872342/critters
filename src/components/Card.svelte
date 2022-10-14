@@ -1,7 +1,7 @@
 <script>
 	import { fade, slide } from 'svelte/transition';
 	import { caughtCritters, time } from '../store.js';
-
+	import { base } from '$app/paths';
 	import { onDestroy } from 'svelte';
 	export let data;
 	export let type;
@@ -190,7 +190,7 @@
 	{/if}
 
 	<div class="more-info-arrow" on:click={() => toggleMoreInfo()}>
-		<img src="./arrow.png" alt="more info" class:showMoreInfo />
+		<img src="{base}/arrow.png" alt="more info" class:showMoreInfo />
 	</div>
 </div>
 
