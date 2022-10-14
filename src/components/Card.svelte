@@ -190,7 +190,7 @@
 	{/if}
 
 	<div class="more-info-arrow" on:click={() => toggleMoreInfo()}>
-		<img src="./arrow.png" alt="more info" class:showMoreInfo />
+		<img src="/arrow.png" alt="more info" class:showMoreInfo />
 	</div>
 </div>
 

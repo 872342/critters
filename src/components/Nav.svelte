@@ -1,11 +1,11 @@
 <script>
-	//import { page } from '$app/stores';
+	import { base } from '$app/paths';
 	export let mobileMenuVisible = false;
 </script>
 
 <nav class="banner">
 	<div class="banner-content">
-		<a href="/" class="title">
+		<a href="{base}/" class="title">
 			<h1>Critter</h1>
 		</a>
 
@@ -20,7 +20,7 @@
 			</svg>
 		</button>
 		<div class="banner-menu">
-			<h6 class="menu-item"><a href="/about">about</a></h6>
+			<h6 class="menu-item"><a href="{base}/about">about</a></h6>
 		</div>
 	</div>
 </nav>

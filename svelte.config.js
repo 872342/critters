@@ -2,6 +2,9 @@
 
 import adapter from '@sveltejs/adapter-static';
 
+const dev = "production" === "development";
+
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
@@ -9,10 +12,13 @@ const config = {
 			default:true
 		},
 		adapter: adapter({
-			pages: 'build',
-            assets: 'build',
+			pages: 'docs',
+            assets: 'docs',
             fallback: null
-		})
+		}),
+		paths: {
+            base: "/critters",
+        },
 	}
 };
 
